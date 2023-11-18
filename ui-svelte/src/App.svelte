@@ -1,5 +1,8 @@
 <script lang="ts">
-    import {onDestroy, onMount} from "svelte";
+    import Tags from "./tag/Tags.svelte";
+    import Page from "./layout/Page.svelte";
+
+ /*   import {onDestroy, onMount} from "svelte";
     import Dashboard from "./dashboard/Dashboard.svelte";
     import Settings from "./setting/Settings.svelte";
     import Tags from "./tag/Tags.svelte";
@@ -40,14 +43,8 @@
 
     onDestroy(() => {
         window.removeEventListener("hashchange", eventListener);
-    });
+    });*/
 </script>
-
-<style>
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-</style>
 
 <Page>
     <Tags></Tags>
