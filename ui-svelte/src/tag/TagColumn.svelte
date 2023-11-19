@@ -1,11 +1,13 @@
 <script lang="ts">
     import type {Tag} from "./Tag";
     import TextBadge from "../component/TextBadge.svelte";
-    import ColorSlider from "../component/color/ColorSlider.svelte";
+    import ColorSlider from "../component/color/HueSlider.svelte";
+    import ShadePicker from "../component/color/ShadePicker.svelte";
+    import HueSlider from "../component/color/HueSlider.svelte";
 
-    export let tag: Tag
+    let { tag } = $props();
 
-    let isEditing: boolean = false
+    let isEditing: boolean = $state(false)
 </script>
 
 <tr>
@@ -16,7 +18,8 @@
             {tag.key}
         {/if}
     <td>
-        <ColorSlider></ColorSlider>
+        <HueSlider></HueSlider>
+        <ShadePicker></ShadePicker>
         <TextBadge color={tag.color}>{tag.color}</TextBadge>
     </td>
     <td class="text-end">{tag.usages}</td>

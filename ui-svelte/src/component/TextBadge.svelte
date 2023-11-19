@@ -1,7 +1,8 @@
 <script lang="ts">
     import bestContrast from 'get-best-contrast-color'
+    import type { Color } from '../common/Color';
 
-    export let color: string
+    let { color }: {color: Color} = $props();
 
     // TODO: Use css color-contrast
     const textColor = bestContrast(color, ['#fff', '#000'])
