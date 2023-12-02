@@ -12,16 +12,10 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@tsconfig/svelte": "^5.0.2",
-    "autoprefixer": "^10.4.16",
-    "daisyui": "^4.4.2",
-    "get-best-contrast-color": "^0.3.1",
-    "postcss": "^8.4.31",
-    "svelte": "^5.0.0-next.8",
+    "svelte": "^4.2.3",
     "svelte-check": "^3.6.0",
-    "tailwindcss": "^3.3.5",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
-  },
-  "proxy": "http://localhost:3030"
+  }
 }
