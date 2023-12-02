@@ -2,7 +2,7 @@
     import Counter from "./lib/Counter.svelte";
 </script>
 
-<main class="bg-amber-300">
+<main>
   <div>
     <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
 
@@ -12,7 +12,7 @@
   </div>
   <h1>Vite + Svelte</h1>
 
-  <div class="text-cyan-300">
+  <div class="card">
     <Counter></Counter>
   </div>
 
