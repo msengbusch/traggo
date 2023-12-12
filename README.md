@@ -46,14 +46,14 @@ may be able to read it. Have a look at our [Install Guide](https://traggo.net/in
 
 ---
 
-<a href="./.github/traggo_list.png">
-    <img width="265" alt="traggo list" src=".github/traggo_list.png">
+<a href="_old/.github/traggo_list.png">
+    <img width="265" alt="traggo list" src="_old/.github/traggo_list.png">
 </a>
-<a href=".github/traggo_calendar.png">
-    <img width="265" alt="traggo list" src=".github/traggo_calendar.png">
+<a href="_old/.github/traggo_calendar.png">
+    <img width="265" alt="traggo list" src="_old/.github/traggo_calendar.png">
 </a>
-<a href=".github/traggo_dashboard.png">
-    <img width="265" alt="traggo list" src=".github/traggo_dashboard.png">
+<a href="_old/.github/traggo_dashboard.png">
+    <img width="265" alt="traggo list" src="_old/.github/traggo_dashboard.png">
 </a>
 
 [Install](https://traggo.net/install/) ᛫

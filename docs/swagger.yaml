@@ -1,0 +1,8 @@
+basePath: /
+host: localhost:4526
+info:
+  contact: {}
+  title: Traggo
+  version: 1.0.0
+paths: {}
+swagger: "2.0"

@@ -1,15 +1,19 @@
 package logger
 
 import (
+	"github.com/traggo/server/environment"
 	"os"
-	"time"
 
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 )
 
-// Init initializes the logger
-func Init(lvl zerolog.Level) {
-	log.Logger = log.Output(zerolog.ConsoleWriter{Out: os.Stdout, TimeFormat: time.RFC3339}).Level(lvl)
-	log.Debug().Msg("Logger initialized")
+func Init() {
+	if environment.Mode == environment.Production {
+		zerolog.SetGlobalLevel(zerolog.InfoLevel)
+	}
+
+	consoleWriter := zerolog.ConsoleWriter{Out: os.Stdout}
+	logger := zerolog.New(consoleWriter).With().Timestamp().Logger()
+	log.Logger = logger
 }
