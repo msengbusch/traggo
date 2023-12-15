@@ -1,10 +1,14 @@
 _old
 
+# Build
+build
+
+# Dependencies
+node_modules
+
 # IDE
 .idea
 
-# Build Files
-build
-
-# Run Files
+# Run
+.env
 .sqlite
