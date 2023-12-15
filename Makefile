@@ -1,6 +1,7 @@
 MODULE=github.com/traggo/server
 
 BUILD_DIR=./build
+BUILD_DIR_WEB=./web/dist
 BUILD_EXEC_CLI_DEV=${BUILD_DIR}/traggo-cli-dev
 BUILD_EXEC_CLI_PROD=${BUILD_DIR}/traggo-cli
 BUILD_EXEC_SERVER_DEV=${BUILD_DIR}/traggo-server-dev
@@ -34,6 +35,9 @@ build-server:
 
 build-server-prod:
 	go build -ldflags "${FLAGS_PROD}" -tags "${TAGS_PROD}" -o "${BUILD_EXEC_SERVER_PROD}" cmd/server/main.go
+
+build-web:
+	cd web && bun run build
 
 .PHONY: run-cli
 run-cli:
