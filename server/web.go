@@ -9,7 +9,7 @@ import (
 import "github.com/gofiber/fiber/v2/middleware/filesystem"
 
 func static(app *fiber.App) {
-	log.Debug().Msg("Initializing server: web")
+	log.Debug().Msg("server.Static()")
 	app.Use("/", filesystem.New(filesystem.Config{
 		Root:       http.FS(web.Files),
 		PathPrefix: "dist",

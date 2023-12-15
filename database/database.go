@@ -13,7 +13,7 @@ import (
 )
 
 func Init() *gorm.DB {
-	log.Debug().Msg("Initializing database")
+	log.Debug().Msg("database.Init()")
 
 	db, err := gorm.Open(sqlite.Open("test.sqlite"), &gorm.Config{
 		Logger: &logger.DatabaseLogger{},

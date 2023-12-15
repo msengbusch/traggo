@@ -11,7 +11,7 @@ import (
 )
 
 func InitSwagger(app *fiber.App) {
-	log.Debug().Msg("Initializing swagger")
+	log.Debug().Msg("server.Swagger()")
 
 	app.Get("/swagger/*", swagger.HandlerDefault)
 }
