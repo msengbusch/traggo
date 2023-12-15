@@ -22,5 +22,10 @@ func main() {
 }
 
 func printInformation() {
-	log.Info().Str("version", environment.BuildVersion).Str("commit", environment.BuildCommit).Str("date", environment.BuildDate).Msg("Traggo")
+	log.Info().
+		Str("env", string(environment.Mode)).
+		Str("version", environment.BuildVersion).
+		Str("commit", environment.BuildCommit).
+		Str("date", environment.BuildDate).
+		Msg("Traggo")
 }

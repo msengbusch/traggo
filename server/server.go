@@ -8,7 +8,7 @@ import (
 )
 
 func Init() *fiber.App {
-	log.Debug().Msg("Initializing server")
+	log.Debug().Msg("server.Init()")
 
 	app := fiber.New()
 	//TODO Move to other file
