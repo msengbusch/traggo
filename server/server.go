@@ -11,13 +11,8 @@ func Init() *fiber.App {
 	log.Debug().Msg("server.Init()")
 
 	app := fiber.New()
-	//TODO Move to other file
-	//TODO Refactor logs
-	app.Use(fiberzerolog.New(fiberzerolog.Config{
-		Logger: &log.Logger,
-		Levels: []zerolog.Level{zerolog.ErrorLevel, zerolog.WarnLevel, zerolog.TraceLevel},
-	}))
 
+	logger(app)
 	static(app)
 
 	return app
@@ -25,4 +20,11 @@ func Init() *fiber.App {
 
 func Listen(app *fiber.App) {
 	app.Listen(":4526")
+}
+
+func logger(app *fiber.App) {
+	app.Use(fiberzerolog.New(fiberzerolog.Config{
+		Logger: &log.Logger,
+		Levels: []zerolog.Level{zerolog.ErrorLevel, zerolog.WarnLevel, zerolog.TraceLevel},
+	}))
 }
