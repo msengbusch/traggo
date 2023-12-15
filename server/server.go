@@ -11,10 +11,14 @@ func Init() *fiber.App {
 	log.Debug().Msg("Initializing server")
 
 	app := fiber.New()
+	//TODO Move to other file
+	//TODO Refactor logs
 	app.Use(fiberzerolog.New(fiberzerolog.Config{
 		Logger: &log.Logger,
 		Levels: []zerolog.Level{zerolog.ErrorLevel, zerolog.WarnLevel, zerolog.TraceLevel},
 	}))
+
+	static(app)
 
 	return app
 }
