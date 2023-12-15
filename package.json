@@ -1,0 +1,12 @@
+{
+  "name": "traggo",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "web"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3"
+  }
+}
