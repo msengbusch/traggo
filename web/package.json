@@ -8,6 +8,9 @@
     "check": "bunx --bun svelte-check --tsconfig ./tsconfig.json",
     "test": "bunx --bun vitest"
   },
+  "dependencies": {
+    "common": "workspace:*"
+  },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
     "@tsconfig/svelte": "^5.0.2",

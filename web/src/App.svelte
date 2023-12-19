@@ -21,6 +21,8 @@ const routes: Route[] = [
     component: lazy(() => import("./Home.svelte")),
   }
 ];
+
+hey()
 </script>
 
 <Router {routes}>
