@@ -5,6 +5,7 @@
         "ms-vscode.vscode-typescript-next",
         "esbenp.prettier-vscode",
         "svelte.svelte-vscode",
-        "bradlc.vscode-tailwindcss"
+        "bradlc.vscode-tailwindcss",
+        "github.vscode-github-actions"
     ]
 }
