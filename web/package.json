@@ -1,0 +1,14 @@
+{
+    "name": "web",
+    "private": true,
+    "scripts": {
+        
+    },
+    "devDependencies": {
+
+    },
+    "dependencies": {
+
+    }
+  }
+  
