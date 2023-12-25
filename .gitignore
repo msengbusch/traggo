@@ -1,2 +1,18 @@
+# Build
+build
+dist
+
 # Dependencies
 node_modules
+
+# Environment
+*.local
+
+# IDEs
+.idea
+.vscode
+!.vscode/extensions.json
+
+# Logs
+logs
+*.log
