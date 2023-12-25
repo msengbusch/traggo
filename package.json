@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-
+    "postinstall": "bunx --bun husky install"
   },
-  "workspaces": [
-    
-  ],
+  "workspaces": [],
   "devDependencies": {
-     
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "husky": "^8.0.3"
   }
 }
