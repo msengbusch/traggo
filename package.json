@@ -1,0 +1,14 @@
+{
+  "name": "traggo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+
+  },
+  "workspaces": [
+    
+  ],
+  "devDependencies": {
+     
+  }
+}
