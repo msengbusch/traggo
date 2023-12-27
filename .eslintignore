@@ -1,0 +1,19 @@
+# Build
+build
+dist
+
+# Dependencies
+node_modules
+bun.lockb
+
+# Environment
+*.local
+
+# IDEs
+.idea
+.vscode
+!.vscode/extensions.json
+
+# Logs
+logs
+*.log
