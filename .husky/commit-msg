@@ -2,3 +2,5 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 bunx --bun commitlint --edit ${1}
+bunx --bun prettier --check .
+bunx --bun eslint .
