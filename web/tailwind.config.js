@@ -1,12 +1,7 @@
-import daisyui from "daisyui"
+import daisyui from "daisyui";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./src/**/*.{html,js,ts,svelte}"
-  ],
-  plugins: [
-    daisyui
-  ]
-}
-
+  content: ["./src/**/*.{html,js,ts,svelte}"],
+  plugins: [daisyui]
+};
