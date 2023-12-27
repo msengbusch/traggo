@@ -2,8 +2,12 @@
   "name": "traggo",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "postinstall": "bunx --bun husky install"
+    "postinstall": "bunx --bun husky install",
+    "lint": "bunx --bun prettier --check . && bunx --bun eslint .",
+    "lint:format": "bunx --bun prettier --check .",
+    "format": "prettier --write ."
   },
   "workspaces": [
     "web"
@@ -11,6 +15,14 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "husky": "^8.0.3"
+    "@types/eslint": "8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-svelte": "^2.35.1",
+    "husky": "^8.0.3",
+    "prettier": "3.1.1",
+    "prettier-plugin-svelte": "^3.1.2"
   }
 }
