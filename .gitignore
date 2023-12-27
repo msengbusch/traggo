@@ -1,6 +1,7 @@
 # Build
 build
 dist
+.svelte-kit
 
 # Dependencies
 node_modules
