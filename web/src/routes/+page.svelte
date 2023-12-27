@@ -10,6 +10,8 @@
 </svelte:head>
 
 <section>
+  <button class="btn btn-primary btn-md">Button</button>
+
   <h1>
     <span class="welcome">
       <picture>
