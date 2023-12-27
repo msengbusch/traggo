@@ -17,6 +17,6 @@ jobs:
       - name: Build web
         run: cd web && bun run build
 
-     # TODO: Enable if vitest dosen't hang anymore
-     # - name: Test web
-     #   run: cd web && bun run test
+      # TODO: Enable if vitest dosen't hang anymore
+      # - name: Test web
+      #   run: cd web && bun run test
