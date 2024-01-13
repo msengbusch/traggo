@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "golang.go",
+        "ms-vscode.vscode-typescript-next",
+        "esbenp.prettier-vscode",
+        "svelte.svelte-vscode",
+        "bradlc.vscode-tailwindcss",
+        "github.vscode-github-actions",
+        "oven.bun-vscode",
+        "editorconfig.editorconfig"
+    ]
+}

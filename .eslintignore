@@ -1,10 +1,10 @@
 # Build
 build
 dist
-.svelte-kit
 
 # Dependencies
 node_modules
+bun.lockb
 
 # Environment
 *.local
@@ -17,3 +17,6 @@ node_modules
 # Logs
 logs
 *.log
+
+# Temporary
+*.svelte
