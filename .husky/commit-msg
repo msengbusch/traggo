@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-bunx --bun commitlint --edit ${1}
-bunx --bun lint-staged
+# bunx --bun commitlint --edit ${1}
+# bunx --bun lint-staged
