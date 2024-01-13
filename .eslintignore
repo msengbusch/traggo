@@ -17,3 +17,6 @@ bun.lockb
 # Logs
 logs
 *.log
+
+# Temporary
+*.svelte
