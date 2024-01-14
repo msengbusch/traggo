@@ -1,5 +1,5 @@
-import { build, files } from "$service-worker";
-
+import { build, files, prerendered, version } from "$service-worker";
 import { precacheAndRoute } from "workbox-precaching";
 
-precacheAndRoute([...build, ...files]);
+let cacheEntries = [...build, ...files, ...prerendered].map((url) => ({ url, revision: version }));
+precacheAndRoute(cacheEntries);
