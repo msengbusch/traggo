@@ -1,6 +1,7 @@
 <script>
-  import Navigation from "$lib/nav/Navigation.svelte";
   import "./styles.css";
+
+  import Navigation from "$lib/nav/Navigation.svelte";
 </script>
 
 <div class="app">
